@@ -100,7 +100,7 @@ public class BookDAO {
             preparedStatement.executeUpdate();
             return book;
         }catch(SQLException e){
-            e.print
+            System.out.println(e.getMessage());
         }
         return null;
     }
